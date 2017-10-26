@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<BODY>	
+<font size="5">
+Name:
+	<input type="text" id='name' placeholder="Enter Name">
+<br><br>
+Address:
+	<input type="text" id='add' placeholder="Enter Address">
+<br><br>
+Age:
+	<input type="text" id='age' placeholder="Enter Age">
+<br><br>
+Name of your parents:
+	<input type="text" id='np' placeholder="Enter Name of your parents">
+<br><br>
+Cellphone #:
+	<input type="text" id='number' placeholder="Enter your cellphone #">
+<br><br>
+<a href="index.html"> <button style="font-size: 20"> Back </button> </a>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	<button onclick="save();" style="font-size: 20px"> Submit </button> 
+
+<script type="text/javascript">
+
+function save(){
+	var save=document.getElementById('name').value;
+	localStorage.setItem("name", save);
+
+	var save1=document.getElementById('add').value;
+	localStorage.setItem("add", save1);
+
+	var save2=document.getElementById('age').value;
+	localStorage.setItem("age", save2);
+
+	var save3=document.getElementById('np').value;
+	localStorage.setItem("np", save3);
+
+	var save4=document.getElementById('number').value;
+	localStorage.setItem("number", save4);
+}
+</script>
+
+</form>
+</head>
